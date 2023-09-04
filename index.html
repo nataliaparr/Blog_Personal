@@ -1,0 +1,233 @@
+<!--Especifica que estamos trabajando un documento HTML-->
+<!DOCTYPE html>
+<!--Especifica el lenguaje que la cual trabajaremos en el documento-->
+<html lang="en">
+<!--Especificamos las rutas de los archivos externos de nuestro proyecto web-->
+<head>
+    <!--Especificamos que nuestro documento permita caracteres especiales-->
+    <meta charset="UTF-8">
+    <!--Especificamos que nuestro contenido se visualice en diferentes dispositivos-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Especificamos el título de nuestro proyecto web-->
+    <title>Blog Personal Natalia Parra</title>
+    <!--Enlace a la hoja de estilos externa de Boxicons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--Enlace a la hoja de estilos externa del CSS-->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<!--Especifica el contenido de nuestro sitio web-->
+<body>
+    <header class="hero">
+        <nav class="nav__hero">
+            <!--Navegación del encabezado-->
+            <div class="container nav__container">
+                <div class="logo">
+                    <h2 class="logo__name">Natalia Parra.</h2>
+                </div>
+                <!--Enlaces de navegación-->
+                <div class="links">
+                    <a href="#inicio" class="link">Inicio</a>
+                    <a href="#servicios" class="link">Familia</a>
+                    <a href="#proyectos" class="link">Proyectos</a>
+                    <a href="#clientes" class="link">Datos Random</a>
+                    <a href="#contacto" class="link link--active">Contacto</a>
+                </div>
+            </div>
+        </nav>
+        <!--Sección principal del encabezado-->
+        <section class="container hero__main" id="Inicio">
+            <!--Textos y contenido destacado-->
+            <div class="hero__textos">
+                <h1 class="title">Welcome to <span class="title--active">my first blog!</span></h1>
+                <p class="copy">Aquí plasmaré solo un poco de mi vida <b class="copy__active"> but first </b></p>
+                <p class="cta">Let me show a selfie</a>
+            </div>
+            <!--Imagén del encabezado-->
+            <div class="position_img">
+                <img src="img/Selfie.jpg" width="400" height="600" class="selfie">
+                <p class="caption">Foto aprendiendo HTML</a>
+            </div>
+        </section>
+    </header>
+    <!--Contenido Principal-->
+    <main>
+        <section class="services" id="servicios">
+            <div class="container">
+                <h2 class="subtitle">Mi familia<span class="point">.</span></h2>
+                <p class="copy__section">Después de Dios, ellos son lo más importante para mi:</p>
+            <!--Especifica que creará un contenedor para los articulos de los servicios-->
+            <article class="container-cards">
+                <div class="card">
+                    <img src="img/papás.jpg" class="card__img">
+                    <div class="cards__text">
+                        <p class="card__list">Mis papás</p>
+                        <h3 class="card__title">Edgar y Carolina<span class="point">.</span></h3>
+                        <p class="card__copy">Mis progenitores están separados (hace muchos años), a los dos los amo con mi vida. A mi pa casi no lo veo y mi mamá es con quien vivo.</p>
+                        <a href="#" class="card__button">Volver al inicio</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/hermanos.jpg" class="card__img">
+                    <div class="cards__text">
+                        <p class="card__list">Mis hermanos</p>
+                        <h3 class="card__title">Mao y Fercha<span class="point">.</span></h3>
+                        <p class="card__copy">A ellos los amo con todo lo que soy, y pues sí, soy la de la mitad; del sandwich me tocó ser lo mejor: el jamón y el queso. Mejoró la calidad de la foto, no? </p>
+                        <a href="#" class="card__button">Volver al inicio</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/Sashayyo.JPG" class="card__img">
+                    <div class="cards__text">
+                        <p class="card__list">Mi bebé</p>
+                        <h3 class="card__title">Sasha Petulia<span class="point">.</span></h3>
+                        <p class="card__copy">Cuento corto: yo no quería una mascota, mis hermanos me convencieron, y llevo con mi Sasha más de 12 años. Ella ha mejorado por completo mi vida.</p>
+                        <a href="#" class="card__button">Volver al inicio</a>
+                    </div>
+                </div>
+            </article>
+          </div>
+        </section>
+        <!--Especifica la información de nuestros proyectos-->
+        <section class="projects container" id="proyectos">
+            <div class="proyects_modifier">
+                <h2 class="subtitle2">Aquí irían mis proyectos recientes<span class="point">.</span></h2>
+                <img src="img/premios.jpeg" class="card__img2">
+                <p class="copy__section2">SI TAN SOLO TUVIERA UNOOOOOOO</p>
+            </div>
+            <article class="container-bg">
+                <div class="card">
+                    <div class="cards__text">
+                    <h3 class="card__title">Soy ingeniera<span class="point">.</span></h3>
+                    <p class="card__date">Mecatrónica e Industrial</p>
+                    <p class="card__copy">Estudie en la Fundación Agraria de Colombia las dos carreras, inciando con Mecatrónica y finalizando decidií hacer la doble titulación con Industrial.</p>
+                    <a href="#" class="card__button">Volver al inicio</a>
+                  </div>
+                </div>
+                <div class="background">
+                    <img src="img/grado2.JPG" class="background__img1">
+                    <div class="background__text">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cards__text">
+                    <h3 class="card__title">Proximamente<span class="point">.</span></h3>
+                    <p class="card__date">Desarrolladora Full-Stack</p>
+                    <p class="card__copy">Y heme aquí, haciendo un blog personal en HTML y CSS. Porque el profe pidió la tarea, pero aún no veo la clase de css para complementar saberes, en fin, la hipotenusa.</p>
+                    <a href="#" class="card__button">Vuelve al inicio</a>
+                  </div>
+                </div>
+                <div class="background">
+                    <img src="img/fullstack.png" class="background__img">
+                    <div class="background__text">
+                        <h3 class="background__title">Chalalalala</h3>
+                        <p class="background__copy">oh oh oh ohhhhh</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <!--Especifica la info de la sección de testimonios-->
+        <section class="testimony" id="clientes">
+            <div class="container">
+                <h2 class="subtitle">Datos random míos<span class="point">.</span></h2>
+                <p class="copy__section">Pequeñas curiosidades.</p>
+
+                <div class="testimony-container">
+                    <div class="testimony__card">
+                        <img src="img/novio.JPG" class="testimony__img">
+                        <div class="testimony__copy">
+                            <div class="testimony__info">
+                                <p class="testimony__position">Llevo más de 4 años con mi novio.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimony__card">
+                        <img src="img/mascotas.JPG" class="testimony__img">
+                        <div class="testimony__copy">
+                            <div class="testimony__info">
+                                <p class="testimony__position">Soy la mamá temporal de las mascotas de mi hermano.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimony__card">
+                        <img src="img/hp.jpg" class="testimony__img">
+                        <div class="testimony__copy">
+                            <div class="testimony__info">
+                                <p class="testimony__position">He leído todos los libros de HP.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimony__card">
+                        <img src="img/patinaje.jpg" class="testimony__img">
+                        <div class="testimony__copy">
+                            <div class="testimony__info">
+                                <p class="testimony__position">Amo patinar aunque casi no lo hago.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+
+        <section class="email container container--modifier" id="contacto">
+            <h2 class="subtitle subtitle--modifier">Hay 3 canciones que les quiero recomendar:<span class="point">.</span></h2>
+
+            <p class="copy__section copy__section--modifier">A mi me suben el animo y me dan ganas de vivir la vida</p>
+
+            <div class="check">
+                <div class="check__item">
+                    <i class='bx bxs-music'></i>
+                    <div class="check__numbers">
+                        <p class="check__number">1.</p>
+                        <p class="check__copy">Bye bye - beret</p>
+                    </div>
+                </div>
+                <div class="check__item">
+                    <i class='bx bxs-music'></i>
+                    <div class="check__numbers">
+                        <p class="check__number">2.</p>
+                        <p class="check__copy">Me levanté - Dave Bolaño.</p>
+                    </div>
+                </div>
+                <div class="check__item2">
+                    <i class='bx bxs-music'></i>
+                    <div class="check__numbers">
+                        <p class="check__number">3.</p>
+                        <p class="check__copy">Conquistar el planeta - Timo</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__caption">
+            <section class="get-email">
+                <h3 class="title__footer">Believe in yourself and you will be unstoppable.</h3>
+            </section>
+        </div>
+        <div class="contact">
+            <div class="item__contact">
+                <i class='bx bx-copyright contact__icon' ></i>
+                <h3 class="contact__title">NataliaParra</h3>
+            </div>
+            <div class="item__contact">
+                <i class='bx bx-mail-send contact__icon' ></i>
+                <h3 class="contact__title">Noexiste@gmail</h3>
+            </div>
+            <div class="item__contact">
+                <i class='bx bxs-edit-location contact__icon' ></i>
+                <h3 class="contact__title">Notengoinsta</h3>
+            </div>
+            <div class="item__contact item__contact--gold">
+                <i class='bx bxs-chat contact__icon contact__icon--modifier' ></i>
+                <h3 class="contact__title">Solotengowhats</h3>
+            </div>
+        </div>
+        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    </footer>
+    
+    </main>
+</body>
+</html>
